@@ -44,8 +44,7 @@ server {
     return 301 https://$host$request_uri;
 }
 server {
-    listen 443 ssl;
-    http2 on;
+    listen 443 ssl http2;
     server_name anugrahdjayatunggal.me www.anugrahdjayatunggal.me;
 
     ssl_certificate     /etc/letsencrypt/live/anugrahdjayatunggal.me/fullchain.pem;
