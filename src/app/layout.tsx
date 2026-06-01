@@ -34,6 +34,18 @@ export const metadata: Metadata = {
   publisher: site.name,
   formatDetection: { email: false, address: false, telephone: false },
   alternates: { canonical: "/" },
+  // Deklarasi eksplisit tag <link rel="icon"> untuk memperkuat sinyal favicon
+  // ke Google bot. Next.js juga otomatis emit dari file icon.png/apple-icon.png
+  // di folder app/, tapi deklarasi eksplisit ini berperan sebagai backup signal.
+  icons: {
+    icon: [
+      { url: "/logo-anugrah-djaya-tunggal.webp", type: "image/webp" },
+    ],
+    apple: [
+      { url: "/logo-anugrah-djaya-tunggal.webp", type: "image/webp" },
+    ],
+    shortcut: ["/logo-anugrah-djaya-tunggal.webp"],
+  },
   openGraph: {
     title,
     description,
@@ -60,6 +72,26 @@ export const metadata: Metadata = {
   },
   // Ganti dengan kode verifikasi dari Google Search Console saat tersedia.
   // verification: { google: "GANTI_DENGAN_KODE_VERIFIKASI" },
+};
+
+/**
+ * WebSite Schema — sinyal utama yang Google gunakan untuk menentukan
+ * "site name" di hasil pencarian (SERP).
+ * Tanpa ini, Google cenderung fallback ke nama domain mentah.
+ * Ref: https://developers.google.com/search/docs/appearance/site-names
+ */
+const websiteSchema = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  name: site.name,
+  alternateName: site.shortName,
+  url: site.url,
+  inLanguage: "id-ID",
+  publisher: {
+    "@type": "Organization",
+    name: site.name,
+    url: site.url,
+  },
 };
 
 const organizationSchema = {
@@ -124,6 +156,10 @@ export default function RootLayout({
   return (
     <html lang="id" className={`${inter.variable} antialiased`}>
       <body className="min-h-screen font-sans">
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }}
+        />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
