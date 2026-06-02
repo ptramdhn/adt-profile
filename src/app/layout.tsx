@@ -19,6 +19,7 @@ export const metadata: Metadata = {
     template: `%s | ${site.name}`,
   },
   description,
+  applicationName: site.name,
   keywords: [
     "supplier barang teknik Jakarta Utara",
     "mechanical seal",
@@ -84,7 +85,7 @@ const websiteSchema = {
   "@context": "https://schema.org",
   "@type": "WebSite",
   name: site.name,
-  alternateName: site.shortName,
+  alternateName: [site.shortName, "PT ADT"],
   url: site.url,
   inLanguage: "id-ID",
   publisher: {
