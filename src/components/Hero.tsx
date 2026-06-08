@@ -8,17 +8,13 @@ export function Hero() {
           {/* Left: Text content */}
           <div>
             <p className="text-teal-400 font-medium text-sm uppercase tracking-wider mb-4">
-              Supplier Barang Teknik · Jakarta Utara
+              Fabrikasi &amp; Supplier Barang Teknik · Jakarta Utara
             </p>
             <h1 className="text-3xl md:text-5xl font-bold text-white leading-tight mb-6">
-              Supplier <span className="text-teal-400">Barang Teknik</span> di Jakarta
-              Utara untuk Kebutuhan Industrial Parts Anda
+              Mitra Terpercaya untuk <span className="text-teal-400">Fabrikasi &amp; Spare Part</span> Industri Anda
             </h1>
             <p className="text-gray-200 text-lg md:text-xl leading-relaxed mb-8">
-              PT Anugrah Djaya Tunggal adalah supplier barang teknik yang berlokasi di
-              Jakarta Utara. Kami menyediakan mechanical seal, flexible hose, sprocket,
-              hingga roll conveyor untuk mendukung kebutuhan industri di seluruh
-              Indonesia. Berbadan hukum resmi dan siap menjadi mitra suplai Anda.
+              PT Anugrah Djaya Tunggal memproduksi dan menyuplai kebutuhan komponen industri di seluruh Indonesia. Kami spesialis dalam custom <strong>Rubber, Polyurethane, Carbon, Fabrikasi Logam (CNC Machining)</strong>, hingga <strong>Rekondisi Hidrolik &amp; Hard Chrome</strong> dengan presisi tinggi dan kualitas terjamin.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <a
