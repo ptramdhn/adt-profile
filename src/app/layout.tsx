@@ -72,7 +72,9 @@ export const metadata: Metadata = {
     },
   },
   // Ganti dengan kode verifikasi dari Google Search Console saat tersedia.
-  // verification: { google: "GANTI_DENGAN_KODE_VERIFIKASI" },
+  verification: {
+    google: process.env.GOOGLE_SITE_VERIFICATION || "n4w3AkVygcmEbpV5ghe_NcOZOwiS0hegGQFWflb_Kuc",
+  },
 };
 
 /**
@@ -85,14 +87,8 @@ const websiteSchema = {
   "@context": "https://schema.org",
   "@type": "WebSite",
   name: site.name,
-  alternateName: [site.shortName, "PT ADT"],
+  alternateName: "PT ADT",
   url: site.url,
-  inLanguage: "id-ID",
-  publisher: {
-    "@type": "Organization",
-    name: site.name,
-    url: site.url,
-  },
 };
 
 const organizationSchema = {
