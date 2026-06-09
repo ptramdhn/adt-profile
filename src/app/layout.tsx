@@ -1,16 +1,11 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
 import "./globals.css";
 import { site, fullAddress } from "@/lib/site";
 
-const inter = Inter({
-  variable: "--font-inter",
-  subsets: ["latin"],
-});
 
-const title = "PT Anugrah Djaya Tunggal — Supplier Barang Teknik Jakarta Utara";
+const title = "PT Anugrah Djaya Tunggal — Supplier & Fabrikasi Barang Teknik Jakarta Utara";
 const description =
-  "Supplier barang teknik di Jakarta Utara: mechanical seal, flexible hose, sprocket & roll conveyor. Berbadan hukum resmi — hubungi kami untuk penawaran harga.";
+  "Supplier & produsen barang teknik di Jakarta Utara. Spesialis custom Rubber, Polyurethane, Carbon, dan Fabrikasi Logam (CNC Machining) berkualitas tinggi.";
 
 export const metadata: Metadata = {
   metadataBase: new URL(site.url),
@@ -22,12 +17,12 @@ export const metadata: Metadata = {
   applicationName: site.name,
   keywords: [
     "supplier barang teknik Jakarta Utara",
-    "mechanical seal",
-    "flexible hose",
-    "sprocket",
-    "roll conveyor",
-    "industrial parts",
-    "supplier barang teknik",
+    "custom rubber jakarta",
+    "custom polyurethane",
+    "carbon brush",
+    "fabrikasi logam",
+    "cnc machining jakarta",
+    "spare part industri",
     "PT Anugrah Djaya Tunggal",
   ],
   authors: [{ name: site.name }],
@@ -151,7 +146,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="id" className={`${inter.variable} antialiased`}>
+    <html lang="id" className="antialiased">
       <body className="min-h-screen font-sans">
         <script
           type="application/ld+json"

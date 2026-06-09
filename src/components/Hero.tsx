@@ -14,7 +14,7 @@ export function Hero() {
               Mitra Terpercaya untuk <span className="text-teal-400">Fabrikasi &amp; Spare Part</span> Industri Anda
             </h1>
             <p className="text-gray-200 text-lg md:text-xl leading-relaxed mb-8">
-              PT Anugrah Djaya Tunggal memproduksi dan menyuplai kebutuhan komponen industri di seluruh Indonesia. Kami spesialis dalam custom <strong>Rubber, Polyurethane, Carbon, Fabrikasi Logam (CNC Machining)</strong>, hingga <strong>Rekondisi Hidrolik &amp; Hard Chrome</strong> dengan presisi tinggi dan kualitas terjamin.
+              PT Anugrah Djaya Tunggal memproduksi dan menyuplai kebutuhan komponen industri di seluruh Indonesia. Kami spesialis dalam custom <strong>Rubber, Polyurethane, Carbon, dan Fabrikasi Logam (CNC Machining)</strong> dengan presisi tinggi dan kualitas terjamin.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <a

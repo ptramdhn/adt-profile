@@ -28,7 +28,7 @@ export default function OpengraphImage() {
           {site.name}
         </div>
         <div style={{ fontSize: 32, color: "#e2e8f0", marginTop: 28, maxWidth: 900 }}>
-          Mechanical Seal · Flexible Hose · Sprocket · Roll Conveyor
+          Rubber · Polyurethane · Carbon · Fabrikasi Logam
         </div>
       </div>
     ),

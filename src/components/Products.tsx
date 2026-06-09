@@ -41,13 +41,6 @@ function CarbonIcon({ className = "w-8 h-8" }: { className?: string }) {
   );
 }
 
-function ReconditionIcon({ className = "w-8 h-8" }: { className?: string }) {
-  return (
-    <svg className={className} fill="none" stroke="currentColor" viewBox="0 0 24 24">
-      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.77-3.77a6 6 0 01-7.94 7.94l-6.91 6.91a2.12 2.12 0 01-3-3l6.91-6.91a6 6 0 017.94-7.94l-3.76 3.76z" />
-    </svg>
-  );
-}
 
 /* ─── Category Data ───────────────────────────────────────────────── */
 
@@ -184,24 +177,7 @@ const categories: ProductCategory[] = [
       "Mechanical Seal",
     ],
   },
-  {
-    id: "recondition",
-    title: "Recondition",
-    tagline: "Hard Chrome, Grinding, Relining & Silinder Hydraulic",
-    description:
-      "Layanan rekondisi dan perbaikan komponen mesin untuk memperpanjang masa pakai dan mengembalikan performa optimal. Meliputi hard chrome plating, grinding presisi, relining, dan perbaikan silinder hidrolik.",
-    icon: <ReconditionIcon />,
-    accentColor: "text-emerald-500",
-    accentBg: "bg-emerald-500/10",
-    accentBorder: "border-emerald-500/20",
-    accentSolid: "bg-emerald-500",
-    products: [
-      "Hard Chrome Plating",
-      "Grinding Presisi",
-      "Relining",
-      "Perbaikan Silinder Hydraulic",
-    ],
-  },
+
 ];
 
 /* ─── Product Card Component ─────────────────────────────────────── */
